@@ -1,0 +1,109 @@
+@font-face {
+  font-family: ag-light;
+  src: url('../font/Atlas Grotesk-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: ag-regular;
+  src: url('../font/Atlas Grotesk-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: ag-medium;
+  src: url('../font/Atlas Grotesk-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: ag-bold;
+  src: url('../font/Atlas Grotesk-Bold.otf') format('opentype');
+}
+
+main {
+  margin: 4.17vw;
+}
+img {
+  width: 100%;
+}
+.intro-p,
+.content-div-title {
+  font-family : "ag-light", sans-serif;
+  font-size : 2.08vw;
+  line-height : 3.54vw;
+  color : #1A1A1A;
+}
+#content-div-intro {
+  padding-bottom: 9.4vw;
+}
+.content-div {
+  padding-bottom: 12.65vw;
+}
+.content-div-title {
+  padding: 4.27vw 6.77vw;
+}
+.intro-title,
+.module-title {
+  font-family : "ag-medium", sans-serif;
+  font-size : 2.19vw;
+  line-height : 3.33vw;
+  letter-spacing : -0.42px;
+  color : #1A1A1A;
+}
+
+/*** INTRO ***/
+.intro-title {
+  padding-left: 37%;
+  padding-bottom: 6.77vw;
+}
+.intro-p {
+  padding-left: 40.6%;
+  padding-top: 6.77vw;
+}
+
+/*** MODULE ***/
+.module {
+  display: inline-grid;
+  font-family : "ag-regular", sans-serif;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 3.44vw;
+  width: 100%;
+  padding-bottom: 6.15vw;
+}
+.module-title {
+  margin-bottom: 3.23vw;
+}
+.module-description {
+  margin-top: 3px;
+}
+.module-p {
+  /* font-family : "ag-regular", sans-serif; */
+  font-size : 1.35vw;
+  line-height : 2.34vw;
+  color : #1A1A1A;
+}
+
+/*** NEWS ***/
+.news-container {
+  font-family : "ag-regular", sans-serif;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3.59vw;
+  padding-left: 6.77vw;
+}
+.news-img{
+  margin-bottom: 1.82vw;
+}
+.news-title {
+  font-family : "ag-medium", sans-serif;
+  font-size : 1.71vw;
+  line-height : 3.21vw;
+  letter-spacing : 0.5px;
+  color : #1A1A1A;
+  margin-bottom: 2.55vw;
+}
+.news-p {
+  font-family : "ag-regular", sans-serif;
+  font-size : 1.35vw;
+  line-height : 2.34vw;
+  color : #1A1A1A;
+  min-height: 10vw;
+}

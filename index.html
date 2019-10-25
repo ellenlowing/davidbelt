@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/reset.min.css">
     <link rel="stylesheet" href="assets/css/slidebars.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
     <script type="text/javascript" src="assets/vendors/jquery.min.js"></script>
     <script type="text/javascript" src="assets/vendors/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/vendors/slidebars.min.js"></script>
@@ -14,7 +15,7 @@
     <main>
       <nav>
         <div class="hamburger">
-          <svg class="hamburger-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 42.8"><defs><style>.cls-1{fill:#1a1a1a;}</style></defs><title>Asset 2</title><rect class="cls-1" width="80" height="2.8"/><rect class="cls-1" y="20" width="80" height="2.8"/><rect class="cls-1" y="40" width="80" height="2.8"/></svg>
+          <svg class="hamburger-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 42.8"><defs><style>.cls-1{fill:#1a1a1a;}</style></defs><title>Asset 2</title><rect class="cls-1 top" width="80" height="2.8"/><rect class="cls-1 mid" y="20" width="80" height="2.8"/><rect class="cls-1 bottom" y="40" width="80" height="2.8"/></svg>
           <div class="hamburger-menu" off-canvas="id-hamburger right push">
             <div id="hamburger-menu-intro" class="hamburger-menu-title">About</div>
             <div id="hamburger-menu-projects" class="hamburger-menu-title">Projects</div>
@@ -38,7 +39,7 @@
           <svg class="intro-svg" id="dbi-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.1 35"><defs><style>.cls-1{fill:#1a1a1a;}</style></defs><title>Asset 2</title><g id="Layer_4_copy" data-name="Layer 4 copy"><path class="cls-1" d="M35.09,35H0V0H34.39c.57,0,.71.16.71.71V35ZM6.65,17.63v10c0,.85,0,.87.89.87h15a3.69,3.69,0,0,0,.81-.06,7.43,7.43,0,0,0,5.85-7c.12-2.21.05-4.43.08-6.65A8.85,8.85,0,0,0,28.13,10a6.44,6.44,0,0,0-5.76-3.51H7.67c-.94,0-1,.07-1,1C6.65,10.94,6.65,14.29,6.65,17.63Z"/><path class="cls-1" d="M10.17,17.53V10.94c0-.56.18-.75.74-.74h11a3.69,3.69,0,0,1,3.62,2.88,15.13,15.13,0,0,1,.32,3c0,1.65,0,3.3-.06,5a3.79,3.79,0,0,1-2.21,3.55,5,5,0,0,1-2,.38H10.91c-.66,0-.77-.11-.77-.79C10.16,22,10.17,19.75,10.17,17.53Z"/></g></svg>
           <a href="#">DBI</a> ,
           <svg class="intro-svg" id="macrosea-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.01 36"><defs><style>.cls-1{fill:#1a1a1a;}</style></defs><title>Asset 4</title><rect class="cls-1" x="33.57" width="2.44" height="36"/><rect class="cls-1" width="2.44" height="36"/><rect class="cls-1" x="16.78" y="-17.25" width="2.44" height="36" transform="translate(17.26 19.25) rotate(-90)"/><rect class="cls-1" x="16.78" y="16.28" width="2.44" height="36" transform="translate(-16.27 52.78) rotate(-90)"/><rect class="cls-1" x="16.78" y="8.8" width="2.44" height="36" transform="translate(-8.79 45.3) rotate(-90)"/></svg>
-          <a href="#">Macro Sea</a> , and
+          <a href="#">Macro Sea</a> , and <br id="newlab-br">
           <svg class="intro-svg" id="newlab-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.99 36"><defs><style>.cls-1{fill:#1a1a1a;}</style></defs><title>Asset 4</title><path class="cls-1" d="M40.58,24.83h-57V12.43L-6.1,8.12V-2l18.19-9.14L30.26-2l.09,10.15,10.23,4.31ZM-13.57,22H37.74V14.32L27.53,10,27.44-.27,12.09-8-3.26-.28V10l-10.31,4.3Z" transform="translate(16.41 11.17)"/></svg>
           <a href="#">New Lab</a> , he has had the opportunity to accomplish great things with great people in New York and around the world.
         </p>
@@ -72,7 +73,7 @@
               <svg class="module-arrow module-arrow-right" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.21 45.43"><defs><style>.cls-r{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}</style></defs><title>Asset 2</title><polyline class="cls-r" points="1.5 1.5 22.71 22.71 1.5 43.93"/></svg>
             </div>
             <div class="module-description">
-              <div class="module-title">Education</div>
+              <div class="module-title">Arts / Culture</div>
               <p class="module-p">
                 Since 2012, DBI has cultivated a lasting relationship with Uncommon Schools, guiding the network’s development and operation of facilities to support their expansion across the United States.
               </p>
@@ -138,7 +139,7 @@
             <input id="contact-input-message" class="contact-input" type="text" name="message">
             <label class="contact-input-label">Message</label>
           </div>
-          <div class="contact-input-container contact-input-line-container">
+          <div id="contact-input-submit-container" class="contact-input-container contact-input-line-container">
             <input id="contact-input-submit" class="contact-input" type="submit" name="submit">
           </div>
         </form>

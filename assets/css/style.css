@@ -73,8 +73,15 @@ img {
 }
 .hamburger-logo {
   cursor: pointer;
+  position: relative;
   width: 4.17vw;
-  z-index: 3;
+  z-index: 5;
+}
+.hamburger-active .hamburger-logo rect {
+  display: none;
+}
+.hamburger-active .hamburger-logo rect.mid {
+  display: block;
 }
 .hamburger-menu {
   background-color: white;
@@ -109,6 +116,9 @@ img {
   position: relative;
   top: 2px;
   height: 1.875vw;
+}
+#newlab-br {
+  display: none;
 }
 .intro-img-container {
   position: relative;
@@ -209,7 +219,7 @@ img {
   cursor: pointer;
   height: 2.14vw;
   position: absolute;
-  top: calc(50% - 1.75vw);
+  top: calc(50% - 1.07vw);
   z-index: 2;
 }
 .module-arrow-left {
@@ -280,8 +290,7 @@ img {
 .contact-input-half-container {
   float: left;
   display: inline;
-  width: 48.9%;
-  /* margin-right: 1.04vw; */
+  width: 47%;
 }
 #contact-input-half-right {
   float: right;
@@ -291,7 +300,8 @@ img {
   border: none;
   height: 3.646vw;
   width: 100%;
-  margin-bottom: 1.46vw
+  margin-bottom: 1.46vw;
+  padding-left: 1.04vw;
 }
 #contact-input-message {
   height: 14.6vw;
@@ -302,6 +312,10 @@ img {
   float: right;
   text-align: left;
   width: 48.9%;
+  padding: 0 1.04vw;
+}
+#contact-input-submit-container {
+  margin-left: 1.04vw;
 }
 .contact-input-label {
   display: block;

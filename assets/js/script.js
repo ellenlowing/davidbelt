@@ -83,8 +83,13 @@ window.onload = () => {
   $('.hamburger-logo').click((e) => {
     e.stopPropagation();
     e.preventDefault();
-    controller.open('id-hamburger');
-    $('.hamburger').addClass('hamburger-active');
+    if($('.hamburger').hasClass('hamburger-active')) {
+      controller.close('id-hamburger');
+      $('.hamburger').removeClass('hamburger-active');
+    } else {
+      controller.open('id-hamburger');
+      $('.hamburger').addClass('hamburger-active');
+    }
   })
   $(document).click( (e) => {
     if($('.hamburger').hasClass('hamburger-active') && (e.pageX < ($(window).width() - $('.hamburger-menu').width()) || e.clientY > $('.hamburger-menu').height())) {

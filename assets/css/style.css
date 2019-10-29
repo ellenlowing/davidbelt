@@ -25,6 +25,12 @@
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
 }
+::selection {
+  background: white;
+  background-color: white;
+  color: #00c3ff;
+  fill: #00c3ff;
+}
 main {
   overflow-x: hidden;
   margin: 4.17vw;
@@ -63,6 +69,15 @@ img {
   letter-spacing : -0.42px;
   color : #1A1A1A;
 }
+.hover-effect {
+  color: #1A1A1A;
+  -webkit-transition: fill 0.3s, color 0.3s, border-bottom-color 0.3s;
+  transition: fill 0.3s, color 0.3s, border-bottom-color 0.3s;
+}
+.hover-effect:hover {
+  fill: #00c3ff;
+  color: #00c3ff;
+}
 
 /*** NAV ***/
 .hamburger {
@@ -91,6 +106,9 @@ img {
   padding: 3.33vw;
   z-index: 4;
 }
+.hamburger-active .hamburger-menu {
+  display: block;
+}
 .hamburger-menu-title {
   cursor: pointer;
   line-height: 4.6875vw;
@@ -108,14 +126,20 @@ img {
 .intro-p a,
 .intro-p a:visited {
   border-bottom: 1px solid #000;
-  color: #000;
+  border-bottom-color: #000;
   font-family: "ag-medium", sans-serif;
   text-decoration: none;
+}
+.intro-p a:hover {
+  border-bottom-color: #fff;
 }
 .intro-svg {
   position: relative;
   top: 2px;
   height: 1.875vw;
+}
+#dbi-title:hover {
+  fill: #00c3ff;
 }
 #newlab-br {
   display: none;
@@ -254,7 +278,6 @@ img {
   font-size : 1.71vw;
   line-height : 3.21vw;
   letter-spacing : 0.5px;
-  color : #1A1A1A;
   margin-bottom: 2.55vw;
 }
 .news-p {
@@ -313,6 +336,9 @@ img {
   text-align: left;
   width: 48.9%;
   padding: 0 1.04vw;
+}
+#contact-input-submit:hover {
+  color: #00c3ff;
 }
 #contact-input-submit-container {
   margin-left: 1.04vw;

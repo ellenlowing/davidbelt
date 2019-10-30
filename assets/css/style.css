@@ -1,21 +1,37 @@
 @font-face {
+  font-family: ag-thin;
+  src: url('../font/AtlasGrotesk-Thin-Web.woff2') format('woff2'),
+       url('../font/AtlasGrotesk-Thin-Web.woff') format('woff');
+  font-weight:  100;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
   font-family: ag-light;
-  src: url('../font/Atlas Grotesk-Light.otf') format('opentype');
+  src: url('../font/AtlasGrotesk-Light-Web.woff2') format('woff2'),
+       url('../font/AtlasGrotesk-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
 }
 
 @font-face {
   font-family: ag-regular;
-  src: url('../font/Atlas Grotesk-Regular.otf') format('opentype');
+  src: url('../font/AtlasGrotesk-Regular-Web.woff2') format('woff2'),
+       url('../font/AtlasGrotesk-Regular-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
 }
 
 @font-face {
   font-family: ag-medium;
-  src: url('../font/Atlas Grotesk-Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: ag-bold;
-  src: url('../font/Atlas Grotesk-Bold.otf') format('opentype');
+  src: url('../font/AtlasGrotesk-Medium-Web.woff2') format('woff2'),
+       url('../font/AtlasGrotesk-Medium-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
 }
 
 * {

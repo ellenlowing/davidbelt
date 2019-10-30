@@ -99,7 +99,7 @@ window.onload = () => {
   });
 
   // Set up hamburger menu title scroll listener
-  let hamburgerMenuTitles = $('.hamburger-menu-title');
+  let hamburgerMenuTitles = $('.hamburger-menu-title').not('#hamburger-menu-cv');
   hamburgerMenuTitles.each( function() {
     $(this).click( (e) => {
       e.preventDefault();

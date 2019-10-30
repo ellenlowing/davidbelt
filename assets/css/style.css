@@ -67,6 +67,13 @@ img {
   line-height : 3.54vw;
   color : #1A1A1A;
 }
+.cv-p,
+.module-p {
+  font-family : "ag-regular", sans-serif;
+  font-size : 1.35vw;
+  line-height : 2.34vw;
+  color : #1A1A1A;
+}
 #content-div-intro {
   padding-bottom: 9.4vw;
   position: relative;
@@ -78,7 +85,8 @@ img {
   padding: 4.27vw 6.77vw;
 }
 .intro-title,
-.module-title {
+.module-title,
+.cv-title {
   font-family : "ag-medium", sans-serif;
   font-size : 2.19vw;
   line-height : 3.33vw;
@@ -232,12 +240,6 @@ img {
 .module-description {
   margin-top: 3px;
 }
-.module-p {
-  /* font-family : "ag-regular", sans-serif; */
-  font-size : 1.35vw;
-  line-height : 2.34vw;
-  color : #1A1A1A;
-}
 .module-img-container {
   position: relative;
   -webkit-clip-path: polygon(0% 0%, 0% 100%, 8.77% 100%, 8.77% 92.5%, 54.4% 92.5%, 54.4% 100%, 100% 100%, 100% 0);
@@ -371,4 +373,19 @@ img {
 }
 .contact-input-label {
   display: block;
+}
+
+/*** CV ***/
+#content-div-cv {
+  padding-left: 37%;
+}
+.cv {
+  font-family : "ag-regular", sans-serif;
+  margin-bottom: 7.02vw;
+}
+.cv-title {
+  margin-bottom: 2em;
+}
+.cv-p {
+  margin-bottom: 2em;
 }

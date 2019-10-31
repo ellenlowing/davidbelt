@@ -318,7 +318,20 @@ img {
 
 /*** CONTACT ***/
 #content-div-contact {
+  padding-bottom: 20vw;
+}
+#content-div-contact.contact-active {
   padding-bottom: 40.625vw;
+}
+#contact-svg {
+  display: block;
+  width: 5.21vw;
+  height: 3.125vw;
+  padding-left: 6.77vw;
+  cursor: pointer;
+}
+.contact-active #contact-svg {
+  display: none;
 }
 .contact-form,
 .contact-input-label {
@@ -328,8 +341,12 @@ img {
   color : #1A1A1A;
 }
 .contact-form {
+  display: none;
   width: 47.9vw;
   padding-left: 6.77vw;
+}
+.contact-active .contact-form {
+  display: block;
 }
 .contact-input-container {
   margin-bottom: 2.969vw;

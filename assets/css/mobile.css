@@ -128,7 +128,15 @@
 
   /*** CONTACT ***/
   #content-div-contact {
-    padding-bottom: inherit;
+    padding-bottom: 50vw;
+  }
+  #content-div-contact.contact-active {
+    padding-bottom: 20vw;
+  }
+  #contact-svg {
+    width: 13.3vw;
+    height: 8vw;
+    padding-left: 19.7vw;
   }
   .contact-form,
   .contact-input-label {

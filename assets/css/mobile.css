@@ -115,6 +115,11 @@
   }
 
   /*** NEWS ***/
+  #content-div-news {
+    padding-bottom: 0;
+    margin-bottom: 30.9vw;
+    border-bottom: 1px solid #cccccc;
+  }
   .news-container {
     display: block;
     grid-template-columns: unset;

@@ -185,7 +185,7 @@ img {
 }
 .intro-span {
   position: absolute;
-  top: 57.5vw;
+  top: 57.2vw;
   left: 7.4%;
   font-family : "ag-light";
   font-size : 0.9375vw;
@@ -230,7 +230,7 @@ img {
   color : #1A1A1A;
   text-transform: uppercase;
   left: 7.4%;
-  top: 77.4%;
+  top: 77%;
   position: absolute;
   z-index: 2;
 }
@@ -378,6 +378,7 @@ img {
 /*** CV ***/
 #content-div-cv {
   padding-left: 37%;
+  padding-right: 7%;
 }
 .cv {
   font-family : "ag-regular", sans-serif;

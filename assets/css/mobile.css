@@ -6,6 +6,7 @@
   .intro-p,
   .module-p,
   .news-p,
+  .cv-p,
   .hamburger-menu-title,
   .content-div-title {
     font-size: 4.27vw;
@@ -22,13 +23,15 @@
   }
   .intro-title,
   .module-title,
-  .news-title {
+  .news-title,
+  .cv-title {
     font-size: 5.33vw;
     line-height: 5.33vw;
     letter-spacing: 0.32px;
   }
   .intro-span,
   .module-span {
+    font-family: "ag-thin";
     font-size: 1.87vw;
     left: 10.4%;
   }
@@ -38,7 +41,8 @@
     clip-path: polygon(0% 0%, 0% 100%, 8.41% 100%, 8.41% 93.7%, 48.4% 93.7%, 48.4% 100%, 100% 100%, 100% 0);
   }
   .news,
-  .module {
+  .module,
+  .cv {
     padding-bottom: 20.5vw;
   }
   .news-img,
@@ -50,7 +54,8 @@
     margin-bottom: 4.8vw;
   }
   .news-p,
-  .module-p {
+  .module-p,
+  .cv-p {
     font-family: "ag-light", sans-serif;
   }
 
@@ -72,10 +77,13 @@
     display: block;
   }
   .intro-span {
-    top: 60.5vw;
+    top: 60vw;
   }
 
   /*** NAV ***/
+  .hamburger {
+    top: 9.07vw;
+  }
   .hamburger-logo {
     width: 8vw;
   }
@@ -96,7 +104,7 @@
     grid-column-gap: 0;
   }
   .module-span {
-    top: 39.5%;
+    top: 39%;
   }
   .module-description {
     margin-top: 0;
@@ -150,4 +158,9 @@
   #contact-input-submit-container {
     margin-left: 0;
   }
-}
+
+  /*** CV ***/
+  #content-div-cv {
+    padding-left: 0;
+    padding-right: 0;
+  }

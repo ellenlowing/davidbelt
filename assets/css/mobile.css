@@ -12,8 +12,9 @@
     font-size: 4.27vw;
     line-height: 6.4vw;
   }
-  #content-div-intro {
-    padding-bottom: 23.7vw;
+  #content-div-intro,
+  .cv {
+    padding-bottom: 16.5vw;
   }
   .content-div {
     padding-bottom: 30.9vw;
@@ -41,8 +42,7 @@
     clip-path: polygon(0% 0%, 0% 100%, 8.41% 100%, 8.41% 93.7%, 48.4% 93.7%, 48.4% 100%, 100% 100%, 100% 0);
   }
   .news,
-  .module,
-  .cv {
+  .module {
     padding-bottom: 20.5vw;
   }
   .news-img,
@@ -58,10 +58,13 @@
   .cv-p {
     font-family: "ag-light", sans-serif;
   }
+  .intro-title,
+  .cv {
+    padding-left: 19.7vw;
+  }
 
   /*** INTRO ***/
   .intro-title {
-    padding-left: 19.7vw;
     padding-bottom: 8.23vw;
   }
   .intro-p {
@@ -177,3 +180,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .cv {
+    margin-bottom: 0;
+  }
+  .cv-title {
+    margin-bottom: 1em;
+  }
+}

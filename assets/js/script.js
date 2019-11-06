@@ -113,3 +113,39 @@ window.onload = () => {
     $('#content-div-contact').addClass('contact-active');
   });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  let active = false;
+
+  const lazyLoad = function() {
+    if (active === false) {
+      active = true;
+
+      setTimeout(function() {
+        lazyImages.forEach(function(lazyImage) {
+          if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0)) {
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.classList.remove("lazy");
+
+            lazyImages = lazyImages.filter(function(image) {
+              return image !== lazyImage;
+            });
+
+            if (lazyImages.length === 0) {
+              document.getElementsByClassName("content")[0].removeEventListener("scroll", lazyLoad);
+              window.removeEventListener("resize", lazyLoad);
+              window.removeEventListener("orientationchange", lazyLoad);
+            }
+          }
+        });
+
+        active = false;
+      }, 200);
+    }
+  };
+
+  document.getElementsByClassName("content")[0].addEventListener("scroll", lazyLoad);
+  window.addEventListener("resize", lazyLoad);
+  window.addEventListener("orientationchange", lazyLoad);
+});

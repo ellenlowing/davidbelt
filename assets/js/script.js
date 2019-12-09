@@ -28,7 +28,7 @@ window.onload = () => {
   }, 7000);
 
   // Set up clickable slideshow
-  $('.module-arrow-left').click( (e) => {
+  $('.module-arrow-right').click( (e) => {
     const targetImg = $(e.currentTarget).parent().find('.module-img-current');
     const currentIdNum = Number(targetImg.attr('id').substr(-1));
     const prevIdNum = (currentIdNum - 1) >= 0 ? (currentIdNum - 1) : moduleNum-1;
@@ -52,7 +52,7 @@ window.onload = () => {
       }).show();
     });
   });
-  $('.module-arrow-right').click( (e) => {
+  $('.module-arrow-left').click( (e) => {
     const targetImg = $(e.currentTarget).parent().find('.module-img-current');
     const currentIdNum = Number(targetImg.attr('id').substr(-1));
     const nextIdNum = (currentIdNum + 1) < moduleNum ? (currentIdNum + 1) : 0;
